@@ -16,14 +16,7 @@ const content = {
   ],
 
   bioHtml: `
-    <p>
-      A short, text-forward statement about your practice. Keep it concrete:
-      materials, methods, recurring questions, and how you approach making.
-    </p>
-    <p>
-      Mention how you work across formats—installation, performance, writing, software,
-      photography—whatever fits you. Aim for clarity over poetry.
-    </p>
+    <p>BIG LATVIA PAGE PORTFOLIO</p>
   `,
 
   works: [
