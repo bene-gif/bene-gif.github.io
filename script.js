@@ -9,9 +9,9 @@ const content = {
   // Put your images in /assets and update these filenames.
   // Tip: keep them ~1600px wide for good quality.
   gridImages: [
-    { src: "assets/img-01.jpg", alt: "Work title 1", caption: "Work title 1 (2026)" },
+    { src: "assets/img-01.png", alt: "Untitled sculpture composition", caption: "Untitled (2025)" },
     { src: "assets/img-02.jpg", alt: "Work title 2", caption: "Work title 2 (2025)" },
-    { src: "assets/img-03.jpg", alt: "Work title 3", caption: "Work title 3 (2025)" },
+    { src: "assets/img-03.jpg", alt: "Work title 3", caption: "Work title 3 (2024)" },
     { src: "assets/img-04.jpg", alt: "Work title 4", caption: "Work title 4 (2024)" }
   ],
 
