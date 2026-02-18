@@ -3,8 +3,8 @@ const content = {
   location: "Riga / Anywhere",
   discipline: "Interdisciplinary • Installation • Sound • Sculpture",
   email: "hello@example.com",
-  instagram: { label: "@yourhandle", url: "https://instagram.com/" },
-  github: { label: "yourusername", url: "https://github.com/" },
+  instagram: { label: "@kristersdzenis", url: "https://instagram.com/kristersdzenis" },
+  github: { label: "kristersdzenis", url: "https://github.com/kristersdzenis" },
 
   // Put your images in /assets and update these filenames.
   // Tip: keep them ~1600px wide for good quality.
