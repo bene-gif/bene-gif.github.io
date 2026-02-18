@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Portfolio website" />
+  <title>Your Name</title>
+
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Optional: tasteful type pairing -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css?v=2" />
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div class="brand">
+        <a class="brand-link" href="#" id="brandLink">
+          <span class="brand-name" id="nameTop">Your Name</span>
+        </a>
+      </div>
+
+      <nav class="nav">
+        <a href="#work">work</a>
+        <a href="#about">about</a>
+        <a href="#contact">contact</a>
+        <a href="assets/cv.pdf" target="_blank" rel="noreferrer">cv</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <section class="hero" id="about">
+      <div class="hero-left">
+        <h1 class="title">
+          <span id="nameHero">Your Name</span>
+        </h1>
+
+        <div class="bio" id="bio">
+          <p>
+            A short, precise introduction. Use this space for your practice, approach, and mediums.
+          </p>
+          <p>
+            Keep it readable: 2–4 short paragraphs is plenty. Let the work do the heavy lifting.
+          </p>
+        </div>
+
+        <div class="meta">
+          <span class="meta-pill" id="location">Riga / Anywhere</span>
+          <span class="meta-pill" id="discipline">Artist / Designer / Developer</span>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="grid" id="grid" aria-label="Selected images"></div>
+        <p class="hint">Click an image to view.</p>
+      </div>
+    </section>
+
+    <section class="section" id="work">
+      <div class="section-head">
+        <h2>recent work</h2>
+        <div class="section-actions">
+          <button class="btn" id="toggleView" type="button" aria-pressed="false">
+            compact view
+          </button>
+        </div>
+      </div>
+
+      <div class="work-list" id="workList" role="list"></div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="section-head">
+        <h2>contact</h2>
+      </div>
+
+      <div class="contact">
+        <p class="contact-line">
+          email: <a id="emailLink" href="mailto:hello@example.com">hello@example.com</a>
+        </p>
+        <p class="contact-line">
+          instagram: <a id="igLink" href="#" target="_blank" rel="noreferrer">@yourhandle</a>
+        </p>
+        <p class="contact-line">
+          github: <a id="ghLink" href="#" target="_blank" rel="noreferrer">yourusername</a>
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>
+        <span id="footerName">Your Name</span> · <span id="year"></span>
+        <span class="dot">·</span>
+        <a href="#about">back to top</a>
+      </p>
+    </footer>
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox-backdrop" data-close="true"></div>
+    <figure class="lightbox-inner" role="dialog" aria-modal="true" aria-label="Image viewer">
+      <button class="lightbox-close" type="button" aria-label="Close" data-close="true">×</button>
+      <img id="lightboxImg" alt="" />
+      <figcaption id="lightboxCap"></figcaption>
+    </figure>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
