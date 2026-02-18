@@ -1,5 +1,5 @@
 const content = {
-  name: "Your Name",
+  name: "Kristers Dzenis",
   location: "Riga / Anywhere",
   discipline: "Interdisciplinary • Installation • Sound • Sculpture",
   email: "hello@example.com",
