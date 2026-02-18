@@ -64,18 +64,7 @@
       </div>
     </section>
 
-    <section class="section" id="work">
-      <div class="section-head">
-        <h2>recent work</h2>
-        <div class="section-actions">
-          <button class="btn" id="toggleView" type="button" aria-pressed="false">
-            compact view
-          </button>
-        </div>
-      </div>
-
-      <div class="work-list" id="workList" role="list"></div>
-    </section>
+    <!-- recent work moved to hover sidebar for cleaner flow -->
 
     <section class="section" id="contact">
       <div class="section-head">
@@ -103,6 +92,23 @@
       </p>
     </footer>
   </main>
+
+  <aside class="work-sidebar" id="work">
+    <div class="work-sidebar-tab" aria-hidden="true">
+      recent work
+    </div>
+
+    <div class="work-sidebar-panel" aria-label="Recent work">
+      <div class="work-sidebar-head">
+        <h2>recent work</h2>
+        <button class="btn btn-ghost" id="toggleView" type="button" aria-pressed="false">
+          compact view
+        </button>
+      </div>
+
+      <div class="work-list" id="workList" role="list"></div>
+    </div>
+  </aside>
 
   <!-- Lightbox -->
   <div class="lightbox" id="lightbox" aria-hidden="true">

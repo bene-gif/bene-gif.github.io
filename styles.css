@@ -318,3 +318,101 @@ a:hover{ border-bottom-color: var(--fg); }
   .work-item .meta2{ display:none; }
   .work-item .desc{ grid-column: 1 / -1; }
 }
+
+/* =========================
+   Hover sidebar: Recent work
+========================= */
+
+.work-sidebar{
+  position: fixed;
+  left: 0;
+  top: 110px; /* below header */
+  z-index: 40;
+
+  /* collapsed by default */
+  transform: translateX(calc(-1 * (min(420px, 86vw) - 44px)));
+  transition: transform .22s ease;
+}
+
+.work-sidebar:hover,
+.work-sidebar:focus-within{
+  transform: translateX(0);
+}
+
+/* the visible “tab” on the left edge */
+.work-sidebar-tab{
+  position: absolute;
+  left: calc(min(420px, 86vw) - 44px);
+  top: 0;
+
+  width: 44px;
+  height: 140px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--hair);
+  border-left: none;
+  border-radius: 0 14px 14px 0;
+  background: rgba(255,255,255,.55);
+  backdrop-filter: blur(10px);
+
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 12px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--muted);
+
+  cursor: pointer;
+}
+
+/* the sliding panel */
+.work-sidebar-panel{
+  width: min(420px, 86vw);
+  max-height: min(72vh, 640px);
+  overflow: auto;
+
+  border: 1px solid var(--hair);
+  border-left: none;
+  border-radius: 0 18px 18px 0;
+  background: color-mix(in srgb, var(--bg) 92%, white);
+  backdrop-filter: blur(10px);
+
+  padding: 14px 14px 14px;
+  box-shadow: 0 18px 60px rgba(0,0,0,.10);
+}
+
+.work-sidebar-head{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.btn-ghost{
+  background: transparent;
+}
+
+/* tighten work items a bit for sidebar */
+.work-sidebar .work-item{
+  background: rgba(255,255,255,.40);
+}
+
+/* Mobile: make it bottom sheet-ish */
+@media (max-width: 720px){
+  .work-sidebar{
+    top: auto;
+    bottom: 16px;
+    transform: translateX(calc(-1 * (min(420px, 92vw) - 44px)));
+  }
+  .work-sidebar-panel{
+    width: min(420px, 92vw);
+  }
+  .work-sidebar-tab{
+    left: calc(min(420px, 92vw) - 44px);
+    height: 120px;
+  }
+}
